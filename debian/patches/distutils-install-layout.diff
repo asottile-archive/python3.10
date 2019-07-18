@@ -229,7 +229,7 @@ index 2f59ee5..632e3e3 100644
              object.__name__ not in ('xml.etree', 'test.pydoc_mod')):
              if docloc.startswith(("http://", "https://")):
 diff --git a/Lib/site.py b/Lib/site.py
-index a065ab0..cce53af 100644
+index a065ab0..c8517a5 100644
 --- a/Lib/site.py
 +++ b/Lib/site.py
 @@ -7,12 +7,18 @@
@@ -258,10 +258,10 @@ index a065ab0..cce53af 100644
          if os.sep == '/':
 +            if 'VIRTUAL_ENV' in os.environ or sys.base_prefix != sys.prefix:
 +                sitepackages.append(os.path.join(prefix, "lib",
-+                                                 "python" + sys.version[:3],
++                                                 "python{}.{}".format(*sys.version_info),
 +                                                 "site-packages"))
 +            sitepackages.append(os.path.join(prefix, "local/lib",
-+                                             "python" + sys.version[:3],
++                                             "python{}.{}".format(*sys.version_info),
 +                                             "dist-packages"))
 +            sitepackages.append(os.path.join(prefix, "lib",
 +                                             "python3",
@@ -270,7 +270,7 @@ index a065ab0..cce53af 100644
              sitepackages.append(os.path.join(prefix, "lib",
 -                                        "python%d.%d" % sys.version_info[:2],
 -                                        "site-packages"))
-+                                             "python" + sys.version[:3],
++                                             "python{}.{}".format(*sys.version_info),
 +                                             "dist-packages"))
          else:
              sitepackages.append(prefix)
