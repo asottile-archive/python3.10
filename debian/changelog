@@ -1,3 +1,9 @@
+python3.10 (3.10.0~a0~asottile-1+xenial3) xenial; urgency=medium
+
+  * Fix debian's site.py to have proper versions
+
+ -- Anthony Sottile <asottile@umich.edu>  Wed, 17 Jul 2019 23:52:53 -0700
+
 python3.10 (3.10.0~a0~asottile-1+xenial2) xenial; urgency=medium
 
   * Don't ship unversioned python3-embed.pc
