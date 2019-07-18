@@ -1,3 +1,9 @@
+python3.10 (3.10.0~a0~asottile-1+bionic2) bionic; urgency=medium
+
+  * Don't ship unversioned python3-embed.pc
+
+ -- Anthony Sottile <asottile@umich.edu>  Wed, 17 Jul 2019 23:01:33 -0700
+
 python3.10 (3.10.0~a0~asottile-1+bionic1) bionic; urgency=medium
 
   * fake python3.10 build
