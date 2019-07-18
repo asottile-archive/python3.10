@@ -149,7 +149,7 @@ Package: lib@PVER@-testsuite
 Section: libdevel
 Architecture: all
 Depends: @PVER@ (>= ${binary:Version}), ${misc:Depends}, net-tools
-Suggests: python3.8-gdbm, python3.8-tk
+Suggests: python3.10-gdbm, python3.10-tk
 Description: Testsuite for the Python standard library (v@VER@)
  The complete testsuite for the Python standard library.  Note that
  a subset is found in the lib@PVER@-stdlib package, which should
@@ -173,7 +173,7 @@ Architecture: any
 Multi-Arch: allowed
 Depends: @PVER@ (= ${binary:Version}), lib@PVER@-dbg (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
 Recommends: gdb
-Suggests: python3.8-gdbm-dbg, python3.8-tk-dbg
+Suggests: python3.10-gdbm-dbg, python3.10-tk-dbg
 Description: Debug Build of the Python Interpreter (version @VER@)
  The package holds two things:
  .
