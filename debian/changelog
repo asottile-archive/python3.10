@@ -1,3 +1,9 @@
+python3.10 (3.10.0~a0~asottile-1+bionic5) bionic; urgency=medium
+
+  * Fix broken -gdb.py for -dbg package
+
+ -- Anthony Sottile <asottile@umich.edu>  Thu, 19 Sep 2019 14:43:13 -0700
+
 python3.10 (3.10.0~a0~asottile-1+bionic4) bionic; urgency=medium
 
   * Make python3.10-venv depend on python3.10-distutils
