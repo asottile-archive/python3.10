@@ -1,3 +1,9 @@
+# DEPRECATED
+
+Use the builds from https://github.com/deadsnakes/nightly instead
+
+___
+
 python3.10
 ==========
 
